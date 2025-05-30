@@ -5,237 +5,523 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamLand Decor - Esküvői Dekoráció</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Infant:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Infant:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2Fab633e6929724bc5a19d855a6a0958a0%2F02c0a811808d4068a3b6b21e917232f2" alt="DreamLand Decor Logo" class="logo">
-                <span class="brand-name">DreamLand Decor</span>
-            </div>
-
-            <nav class="desktop-nav">
-                <ul class="nav-list">
-                    <li><a href="#about" class="nav-link">Rólunk</a></li>
-                    <li><a href="#services" class="nav-link">Szolgáltatásaink</a></li>
-                    <li><a href="#gallery" class="nav-link">Galéria</a></li>
-                    <li><a href="#contact" class="nav-link">Kapcsolat</a></li>
-                    <li>
-                        <a href="https://www.facebook.com/groups/1137052186356773" class="social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" class="social-icon">
-                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/dreamland_decor_bybabett" class="social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" class="social-icon">
-                                <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <button class="mobile-menu-button" aria-label="Toggle mobile menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-            </button>
-
-            <div class="mobile-menu">
-                <nav class="mobile-nav">
-                    <ul class="mobile-nav-list">
-                        <li><a href="#about" class="mobile-nav-link">Rólunk</a></li>
-                        <li><a href="#services" class="mobile-nav-link">Szolgáltatásaink</a></li>
-                        <li><a href="#gallery" class="mobile-nav-link">Galéria</a></li>
-                        <li><a href="#contact" class="mobile-nav-link">Kapcsolat</a></li>
-                    </ul>
-                    <div class="mobile-social-links">
-                        <a href="https://www.facebook.com/groups/1137052186356773" class="mobile-social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" class="mobile-social-icon">
-                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/dreamland_decor_bybabett" class="mobile-social-link" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" class="mobile-social-icon">
-                                <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                            </svg>
-                        </a>
+    <div class="main-wrapper">
+        <div class="content-container">
+            <div class="page-layout">
+                <header class="main-header">
+                    <div class="header-columns">
+                        <div class="header-content">
+                            <div class="logo-column">
+                                <div class="logo-container">
+                                    <img alt="DreamLand Decor Logo" src="https://cdn.builder.io/api/v1/image/assets%2Fab633e6929724bc5a19d855a6a0958a0%2F02c0a811808d4068a3b6b21e917232f2" class="logo-image" />
+                                    <span class="site-name">
+                                        <span class="site-title">DreamLand Decor</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="navigation-column">
+                                <nav class="desktop-navigation">
+                                    <ul class="nav-list">
+                                        <li><a class="nav-link" href="#about">Rólunk</a></li>
+                                        <li><a class="nav-link" href="#services">Szolgáltatásaink</a></li>
+                                        <li><a class="nav-link" href="#gallery">Galéria</a></li>
+                                        <li><a class="nav-link contact-link" href="#contact">Kapcsolat</a></li>
+                                        <li><a class="social-link facebook-link" href="https://www.facebook.com/groups/1137052186356773" target="_blank" rel="noopener">
+                                            <svg viewBox="0 0 24 24" class="social-icon">
+                                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                            </svg>
+                                        </a></li>
+                                        <li><a class="social-link instagram-link" href="https://www.instagram.com/dreamland_decor_bybabett" target="_blank" rel="noopener">
+                                            <svg viewBox="0 0 24 24" class="social-icon">
+                                                <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                                            </svg>
+                                        </a></li>
+                                    </ul>
+                                </nav>
+                                <div class="mobile-menu-overlay"></div>
+                                <button class="mobile-menu-button">
+                                    <span class="hamburger-line"></span>
+                                    <span class="hamburger-line"></span>
+                                    <span class="hamburger-line"></span>
+                                </button>
+                                <div class="mobile-menu">
+                                    <nav class="mobile-navigation">
+                                        <ul class="mobile-nav-list">
+                                            <li><a class="nav-link mobile-nav-link" href="#about">Rólunk</a></li>
+                                            <li><a href="#services" class="nav-link">Szolgáltatásaink</a></li>
+                                            <li><a href="#gallery" class="nav-link">Galéria</a></li>
+                                            <li><a href="#contact" class="nav-link">Kapcsolat</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="mobile-social-links">
+                                        <a class="social-link facebook-mobile" href="https://www.facebook.com/groups/1137052186356773" target="_blank" rel="noopener">
+                                            <svg viewBox="0 0 24 24" class="social-icon-mobile">
+                                                <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                            </svg>
+                                        </a>
+                                        <a class="social-link instagram-mobile" href="https://www.instagram.com/dreamland_decor_bybabett" target="_blank" rel="noopener">
+                                            <svg viewBox="0 0 24 24" class="social-icon-mobile">
+                                                <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+                </header>
 
-    <main>
-        <section class="hero">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F3e6c9f9ff2e14bc4a7fa5f3219e16424" alt="Wedding Decoration" class="hero-image">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">Álmai esküvői dekorációja</h1>
-                <p class="hero-subtitle">Varázslatos pillanatok, tökéletes kivitelezésben</p>
-                <button class="cta-button">Kapcsolatfelvétel</button>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <h2 class="section-title">Rólunk</h2>
-            <p class="section-subtitle">
-                Szenvedélyünk a tökéletes esküvői dekoráció megalkotása, amely tükrözi a párok egyedi stílusát és szerelmük történetét.
-            </p>
-
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-heading">Álomesküvők varázslatos dekorációval!</h3>
-                    <div class="about-description">
-                        <p>
-                            Több mint tíz éve alkotunk elegáns és egyedi esküvői dekorációkat, hogy minden pár nagy napja igazán emlékezetes és varázslatos legyen. Személyre szabott megoldásainkkal, prémium minőségű díszítőelemekkel és lélegzetelállító virágkompozíciókkal dolgozunk országszerte, meghitt kis esküvőktől a fényűző, nagyszabású eseményekig.
-                        </p>
-                        <p>
-                            Számunkra a dekoráció nem csupán díszítés – ez a hangulat, a stílus és a szerelem történetének megjelenítése. Ha egy modern, különleges és álomszép esküvőt szeretnétek, örömmel segítünk megvalósítani!
-                        </p>
-                        <p class="highlight-text">
-                            Vedd fel velünk a kapcsolatot, hisz álmaid esküvője egyetlen üzenetre van!
-                        </p>
+                <div class="hero-section">
+                    <img alt="" src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F3e6c9f9ff2e14bc4a7fa5f3219e16424" class="hero-background" />
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Álmai esküvői dekorációja</h1>
+                        <p class="hero-subtitle">Varázslatos pillanatok, tökéletes kivitelezésben</p>
+                        <button class="hero-cta-button">Kapcsolatfelvétel</button>
                     </div>
                 </div>
-                <div class="about-image-container">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2Fab633e6929724bc5a19d855a6a0958a0%2F3878f4fa1d654eb18e2047fc577b8b63" alt="Wedding Decoration Example" class="about-image">
-                </div>
-            </div>
-        </section>
 
-        <section id="services" class="services-section">
-            <h2 class="section-title">Szolgáltatásaink</h2>
-
-            <div class="packages-grid">
-                <article class="package-card bronze">
-                    <h3 class="package-title">Mini Bronze</h3>
-                    <ul class="package-features">
-                        <li>✨ Fősztal és Háttér dekoráció</li>
-                        <li>✨ Vendégasztalok dekorációja</li>
-                        <li>✨ Szék dekoráció</li>
-                    </ul>
-                    <button class="package-button">Ajánlat kérés</button>
-                </article>
-
-                <article class="package-card silver featured">
-                    <h3 class="package-title">Silver</h3>
-                    <ul class="package-features">
-                        <li>✨ Fősztal és Háttér dekoráció</li>
-                        <li>✨ Vendégasztalok dekorációja</li>
-                        <li>✨ Szék dekoráció</li>
-                        <li>✨ Fotósarok</li>
-                    </ul>
-                    <button class="package-button">Ajánlat kérés</button>
-                </article>
-
-                <article class="package-card gold">
-                    <h3 class="package-title">Maxi Gold</h3>
-                    <ul class="package-features">
-                        <li>✨ Fősztal és Háttér dekoráció</li>
-                        <li>✨ Vendégasztalok dekorációja</li>
-                        <li>✨ Szék dekoráció</li>
-                        <li>✨ Fotósarok</li>
-                        <li>✨ Ceremónia dekor</li>
-                        <li>✨ Szertartás asztal</li>
-                        <li>✨ Ültetési rend</li>
-                        <li>✨ Asztal számok</li>
-                        <li>✨ "Köszöntünk az esküvőnkön" tábla</li>
-                    </ul>
-                    <button class="package-button">Ajánlat kérés</button>
-                </article>
-
-                <article class="package-card platinum">
-                    <h3 class="package-title">Platina Deluxe</h3>
-                    <ul class="package-features">
-                        <li>✨ Fősztal és Háttér dekoráció</li>
-                        <li>✨ Vendégasztalok dekorációja</li>
-                        <li>✨ Szék dekoráció</li>
-                        <li>✨ Fotósarok</li>
-                        <li>✨ Ceremónia dekor</li>
-                        <li>✨ Szertartás asztal</li>
-                        <li>✨ Ültetési rend</li>
-                        <li>✨ Asztal számok</li>
-                        <li>✨ "Köszöntünk az esküvőnkön" tábla</li>
-                        <li>✨ Pezsgőfal</li>
-                        <li>✨ Textilszalvéták</li>
-                    </ul>
-                    <button class="package-button">Ajánlat kérés</button>
-                </article>
-            </div>
-
-            <div class="services-grid">
-                <!-- Service cards -->
-                <article class="service-card">
-                    <div class="service-image-container">
-                        <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F38be0ee320d64fb485f452ef116fd7d6" alt="Főasztal dekoráció" class="service-image">
+                <section id="about" class="about-section">
+                    <h2 class="section-title">Rólunk</h2>
+                    <p class="section-description">
+                        Szenvedélyünk a tökéletes esküvői dekoráció megalkotása, amely
+                        tükrözi a párok egyedi stílusát és szerelmük történetét.
+                    </p>
+                    <div class="about-content">
+                        <div class="about-columns">
+                            <div class="about-text-column">
+                                <div class="about-text-content">
+                                    <h3 class="about-subtitle">Álomesküvők varázslatos dekorációval!</h3>
+                                    <div class="about-text-wrapper">
+                                        <p class="about-paragraph">
+                                            Több mint tíz éve alkotunk elegáns és egyedi esküvői
+                                            dekorációkat, hogy minden pár nagy napja igazán
+                                            emlékezetes és varázslatos legyen. Személyre szabott
+                                            megoldásainkkal, prémium minőségű díszítőelemekkel és
+                                            lélegzetelállító virágkompozíciókkal dolgozunk
+                                            országszerte, meghitt kis esküvőktől a fényűző,
+                                            nagyszabású eseményekig.
+                                        </p>
+                                        <p class="about-paragraph">
+                                            Számunkra a dekoráció nem csupán díszítés – ez a
+                                            hangulat, a stílus és a szerelem történetének
+                                            megjelenítése. Ha egy modern, különleges és álomszép
+                                            esküvőt szeretnétek, örömmel segítünk megvalósítani!
+                                        </p>
+                                        <p class="about-highlight">
+                                            Vedd fel velünk a kapcsolatot, hisz álmaid esküvője
+                                            egyetlen üzenetre van!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-image-column">
+                                <div class="about-image-container">
+                                    <img src="https://cdn.builder.io/api/v1/image/assets%2Fab633e6929724bc5a19d855a6a0958a0%2F3878f4fa1d654eb18e2047fc577b8b63" class="about-image" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-content">
-                        <h4 class="service-title">Főasztal és háttér - ahol a pár foglal helyet</h4>
-                        <p class="service-description">
-                            A szerelmesek a középpontban – elegánsan megkomponált főasztal és mesés háttér dekoráció, mely méltón keretezi a nap legszebb pillanatait. Itt találkozik az ünnepélyesség a romantikával.
+
+                    <div class="why-choose-us">
+                        <h2 class="why-choose-title">Miért válasszon minket?</h2>
+                        <div class="features-grid">
+                            <div class="features-columns">
+                                <div class="feature-column">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L12 3l-.75.75a6 6 0 0 0-8.49 8.49l9.24 9.24 9.24-9.24z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="feature-title">Szakértelem és Tapasztalat</h3>
+                                        <p class="feature-description">
+                                            Több mint 10 éves tapasztalattal rendelkezünk az esküvői
+                                            dekorációk terén, minden részletre odafigyelünk.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feature-column">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="feature-title">Egyedi Megoldások</h3>
+                                        <p class="feature-description">
+                                            Minden pár egyedi, ezért személyre szabott dekorációs
+                                            megoldásokat kínálunk az Önök stílusához igazítva.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="feature-column">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="feature-title">Minőségi Kivitelezés</h3>
+                                        <p class="feature-description">
+                                            Prémium minőségű anyagokkal és kifinomult részletekkel
+                                            tesszük tökéletessé az Önök nagy napját.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services" class="services-section">
+                    <h2 class="section-title">Szolgáltatásaink</h2>
+                    <div class="packages-container">
+                        <div class="packages-grid">
+                            <div class="package-column">
+                                <div class="package-card bronze-package">
+                                    <div class="package-content">
+                                        <h3 class="package-title">Mini Bronze</h3>
+                                        <ul class="package-features">
+                                            <li class="package-feature">
+                                                <p>✨ Fősztal és Háttér dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Vendégasztalok dekorációja</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szék dekoráció</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="package-button bronze-button">Ajánlat kérés</button>
+                                </div>
+                            </div>
+                            <div class="package-column">
+                                <div class="package-card silver-package featured">
+                                    <div class="package-content">
+                                        <h3 class="package-title">Silver</h3>
+                                        <ul class="package-features">
+                                            <li class="package-feature">
+                                                <p>✨ Fősztal és Háttér dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Vendégasztalok dekorációja</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szék dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Fotósarok</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="package-button silver-button">Ajánlat kérés</button>
+                                </div>
+                            </div>
+                            <div class="package-column">
+                                <div class="package-card gold-package">
+                                    <div class="package-content">
+                                        <h3 class="package-title">Maxi Gold</h3>
+                                        <ul class="package-features">
+                                            <li class="package-feature">
+                                                <p>✨ Fősztal és Háttér dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Vendégasztalok dekorációja</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szék dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Fotósarok</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Ceremónia dekor</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szertartás asztal</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Ültetési rend</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Asztal számok</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ "Köszöntünk az esküvőnkön" tábla</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="package-button gold-button">Ajánlat kérés</button>
+                                </div>
+                            </div>
+                            <div class="package-column">
+                                <div class="package-card platinum-package">
+                                    <div class="package-content">
+                                        <h3 class="package-title">Platina Deluxe</h3>
+                                        <ul class="package-features">
+                                            <li class="package-feature">
+                                                <p>✨ Fősztal és Háttér dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Vendégasztalok dekorációja</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szék dekoráció</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Fotósarok</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Ceremónia dekor</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Szertartás asztal</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Ültetési rend</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Asztal számok</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ "Köszöntünk az esküvőnkön" tábla</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Pezsgőfal</p>
+                                            </li>
+                                            <li class="package-feature">
+                                                <p>✨ Textilszalvéták</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="package-button platinum-button">Ajánlat kérés</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-details">
+                        <div class="service-card">
+                            <div class="service-image-container">
+                                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F38be0ee320d64fb485f452ef116fd7d6" class="service-image" />
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-title">Főasztal és háttér - ahol a pár foglal helyet</h4>
+                                <p class="service-description">
+                                    A szerelmesek a középpontban – elegánsan megkomponált
+                                    főasztal és mesés háttér dekoráció, mely méltón keretezi a
+                                    nap legszebb pillanatait. Itt találkozik az ünnepélyesség
+                                    a romantikával.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image-container">
+                                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Ff0cc093dcd8747c08ea169c101b6553c" class="service-image" />
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-title">
+                                    Fotósarok - ahol igazán csodás képeket készíthetnek a
+                                    vendégekkel
+                                </h4>
+                                <p class="service-description">
+                                    Egy varázslatos kis szeglet, ahol a meghívottak közösen
+                                    örökíthetik meg az este hangulatát. Stílusos háttér és
+                                    bájos kiegészítők teszik felejthetetlenné a közös
+                                    fotókat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image-container">
+                                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Fe265ccd48e284bdeb2cc8c1256d3eee0" class="service-image" />
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-title">
+                                    Vendégasztalok - elegáns vázákkal, gyertyatartókkal,
+                                    virágkompozíciókkal
+                                </h4>
+                                <p class="service-description">
+                                    Minden részletében kifinomult és lenyűgöző – az
+                                    asztalokon légies virágkompozíciók, fénylő gyertyák és
+                                    magas, elegáns vázák teremtenek romantikus, álomszerű
+                                    hangulatot.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image-container">
+                                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Ffd06352275884ceea5295859644f64c5" class="service-image" />
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-title">
+                                    Székek dekorálása, helyenként székszoknyát igénylő,
+                                    néhol csak masnit
+                                </h4>
+                                <p class="service-description">
+                                    A vendégszékek finom, egységes megjelenése is a nagy nap
+                                    részévé válik: elegáns székszoknyák és lágyan omló
+                                    masnik díszítik őket, igazodva az ünnep stílusához.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-image-container">
+                                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Ffdf963867c174c9886028cc98758910d" class="service-image" />
+                            </div>
+                            <div class="service-content">
+                                <h4 class="service-title">
+                                    Ceremóniadekor - ahol szerelmet fogad a pár egy
+                                    romantikusdekoráció előtt
+                                </h4>
+                                <p class="service-description">
+                                    A legszentebb pillanatok helyszíne – virágokkal övezett,
+                                    romantikus dekoráció, mely meghitt hátteret biztosít az
+                                    eskü ígéretéhez. Itt születik meg a közös jövő első
+                                    mondata.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F0987fc58bd23496c89c03c8e5c6e811d" class="service-image" />
+                            <div class="service-content">
+                                <h4 class="service-title">Kiegészítők – amik teljessé teszik az élményt</h4>
+                                <p class="service-description">
+                                    A különleges részletek teszik igazán személyessé az
+                                    ünnepet – az egyedi, stílusban harmonizáló meghívóktól
+                                    kezdve az elegáns ültetőkártyákon át egészen az
+                                    asztalszámokig minden apró kiegészítő hozzájárul az
+                                    összhanghoz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <main class="gallery-main">
+                    <section id="gallery" class="gallery-section">
+                        <h2 class="section-title">Galéria</h2>
+                        <p class="gallery-description">
+                            A galéria megtekintéséhez kattintson az alábbi képekre
+                        </p>
+                        <div class="gallery-container">
+                            <div class="gallery-grid" id="galleryGrid">
+                                <!-- Gallery images will be populated by JavaScript -->
+                            </div>
+                            <button class="show-more-button" id="showMoreButton">
+                                További képek megtekintése
+                            </button>
+                        </div>
+                    </section>
+                </main>
+
+                <section id="contact" class="contact-section">
+                    <h2 class="section-title">Kapcsolat</h2>
+                    <div class="contact-intro">
+                        <p><strong>
+                            Lépj velünk kapcsolatba – álmaid esküvője csak egy
+                            üzenetre van!
+                        </strong></p>
+                        <p class="contact-details">
+                            További információért vagy személyre szabott árajánlatért
+                            kérjük, add meg elérhetőségeidet – különösen figyelj a
+                            pontos e-mail cím megadására. Írd meg elképzeléseidet és a
+                            lehető leghamarabb felvesszük veled a kapcsolatot!
+                        </p>
+                        <p>
+                            Kövess minket közösségi média felületeinken is
+                            inspirációért és friss ötletekért, vagy hívj minket
+                            bizalommal:
+                            <strong>+36 70 753 1280</strong>
+                            <span> 📞</span>
                         </p>
                     </div>
-                </article>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Név *</label>
+                                <input class="form-input" type="text" id="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input class="form-input" type="email" id="email" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="package" class="form-label">Választott csomag *</label>
+                                <select class="form-select" id="package" required>
+                                    <option value="">Válasszon csomagot</option>
+                                    <option value="bronze">Mini Bronze</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gold">Maxi Gold</option>
+                                    <option value="platinum">Platina Deluxe</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="attendees" class="form-label">Vendégek létszám *</label>
+                                <input class="form-input" type="number" id="attendees" min="1" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="form-label">Helyszín (Város) *</label>
+                            <input class="form-input" type="text" id="location" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="form-label">Kitűzött dátum *</label>
+                            <input class="form-input" type="date" id="date" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Üzenet</label>
+                            <textarea class="form-textarea" id="message"></textarea>
+                        </div>
+                        <button class="form-submit-button" type="submit">Küldés</button>
+                    </form>
+                </section>
 
-                <!-- Additional service cards... -->
+                <footer class="main-footer">
+                    <div class="footer-content">
+                        <a class="footer-logo" href="#">DreamLand Decor</a>
+                        <div class="footer-social">
+                            <a class="footer-social-link facebook" href="https://www.facebook.com/groups/1137052186356773" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" class="footer-social-icon">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                                </svg>
+                            </a>
+                            <a class="footer-social-link instagram" href="https://www.instagram.com/dreamland_decor_bybabett?igsh=eDQ2aWh4aGdsMGw0" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" class="footer-social-icon">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="footer-phone">+36 70 753 1280</p>
+                    </div>
+                    <p class="footer-copyright">
+                        <span>©</span>
+                        <span id="currentYear"></span>
+                        <span>DreamLand Decor. Minden jog fenntartva.</span>
+                    </p>
+                </footer>
             </div>
-        </section>
-
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Galéria</h2>
-            <p class="gallery-subtitle">A galéria megtekintéséhez kattintson az alábbi képekre</p>
-
-            <div class="gallery-grid">
-                <!-- Gallery images will be populated by JavaScript -->
-            </div>
-
-            <button class="load-more-button">További képek megtekintése</button>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Kapcsolat</h2>
-            <div class="contact-intro">
-                <p><strong>Lépj velünk kapcsolatba – álmaid esküvője csak egy üzenetre van!</strong></p>
-                <p class="contact-description">
-                    További információért vagy személyre szabott árajánlatért kérjük, add meg elérhetőségeidet – különösen figyelj a pontos e-mail cím megadására. Írd meg elképzeléseidet és a lehető leghamarabb felvesszük veled a kapcsolatot!
-                </p>
-                <p class="contact-social">
-                    Kövess minket közösségi média felületeinken is inspirációért és friss ötletekért, vagy hívj minket bizalommal: <strong>+36 70 753 1280</strong> 📞
-                </p>
-            </div>
-
-            <form class="contact-form">
-                <!-- Form fields -->
-            </form>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="footer-content">
-            <a href="#" class="footer-brand">DreamLand Decor</a>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/groups/1137052186356773" target="_blank" rel="noopener" class="footer-social-link">
-                    <svg viewBox="0 0 24 24" class="footer-social-icon">
-                        <path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/dreamland_decor_bybabett" target="_blank" rel="noopener" class="footer-social-link">
-                    <svg viewBox="0 0 24 24" class="footer-social-icon">
-                        <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                    </svg>
-                </a>
-            </div>
-            <p class="footer-phone">+36 70 753 1280</p>
         </div>
-        <p class="footer-copyright">
-            © <span class="current-year">2024</span> DreamLand Decor. Minden jog fenntartva.
-        </p>
-    </footer>
+    </div>
 
-    <script src="main.js"></script>
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <button class="modal-nav modal-prev" id="modalPrev">&#8249;</button>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <button class="modal-nav modal-next" id="modalNext">&#8250;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
