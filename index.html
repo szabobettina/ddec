@@ -404,21 +404,29 @@
                 </section>
 
                 <main class="gallery-main">
-                    <section id="gallery" class="gallery-section">
-                        <h2 class="section-title">Galéria</h2>
-                        <p class="gallery-description">
-                            A galéria megtekintéséhez kattintson az alábbi képekre
-                        </p>
-                        <div class="gallery-container">
-                            <div class="gallery-grid" id="galleryGrid">
-                                <!-- Gallery images will be populated by JavaScript -->
-                            </div>
-                            <button class="show-more-button" id="showMoreButton">
-                                További képek megtekintése
-                            </button>
+                      <section id="gallery" class="gallery-section">
+                        <h2 class="gallery-title">Galéria</h2>
+                        <div class="gallery-filter">
+                          <!-- Filter content will be added here -->
                         </div>
-                    </section>
+                        <p class="gallery-description">A galéria megtekintéséhez kattintson az alábbi képekre</p>
+                        <div class="gallery-container">
+                          <button class="close-button close-button-top" style="display: none;">
+                            Bezárás
+                          </button>
+                          <div class="gallery-grid">
+                            <!-- Images will be dynamically inserted here -->
+                          </div>
+                          <button class="close-button close-button-bottom" style="display: none;" role="button" aria-label="Bezárás és visszatérés a galéria tetejére">
+                            Bezárás
+                          </button>
+                        </div>
+                        <button class="show-more-button">
+                          További képek megtekintése
+                        </button>
+                      </section>
                 </main>
+
 
                 <section id="contact" class="contact-section">
                     <h2 class="section-title">Kapcsolat</h2>
