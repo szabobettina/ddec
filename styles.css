@@ -625,7 +625,6 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     padding-bottom: 30px;
-    background-color: #fff;
 }
 
 @media (max-width: 991px) {
