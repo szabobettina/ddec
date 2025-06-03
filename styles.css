@@ -645,7 +645,7 @@ body {
 }
 
 .section-title {
-    color: var(--text-gold);
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
