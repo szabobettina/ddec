@@ -644,9 +644,9 @@ body {
 }
 
 .section-title {
-    color: var(--primary-color);
     text-align: center;
     margin-bottom: 30px;
+    color: var(--primary-color);
     font-size: 32px;
     position: relative;
     font-weight: 600;
