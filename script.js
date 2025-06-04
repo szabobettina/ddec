@@ -44,7 +44,8 @@ const elements = {
     heroCtaButton: null,
     navLinks: null,
     currentYearSpan: null,
-    siteTitle: null
+    siteTitle: null,
+    footerLogo: null
 };
 
 // Initialize the application
@@ -66,7 +67,7 @@ function init() {
     elements.navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     elements.currentYearSpan = document.getElementById('currentYear');
     elements.siteTitle = document.querySelector('.site-title');
-
+    elements.footerLogo = document.querySelector('.footer-logo');
 
     // Set up event listeners
     setupEventListeners();
@@ -99,15 +100,18 @@ function setupEventListeners() {
         link.addEventListener('click', handleNavClick);
     });
 
-    if (siteTitle) {
-        siteTitle.style.cursor = 'pointer'; // opcionális, hogy látszódjon hogy kattintható
-        siteTitle.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+    [elements.siteTitle, elements.footerLogo].forEach(el => {
+        if (el) {
+            el.style.cursor = 'pointer';
+            el.addEventListener('click', (e) => {
+                e.preventDefault(); // csak ha <a> tag lenne
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
-        });
-    }
+        }
+    });
 
     // Hero CTA button
     if (elements.heroCtaButton) {
