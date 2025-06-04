@@ -76,6 +76,17 @@ function init() {
     elements.footerLogo = document.querySelector('.footer-logo');
     elements.logoImage = document.querySelector('.logo-container');
 
+    state.images = [
+      "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F848ba5999cef46e99ebcb64419ba0719", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F705e1539ea3b4cdb8b676b2583f8d195", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Fc882af9d197b4040900fd87e3e9a881a", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F7ef9d15071404e228b991801d3cfef12", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2F82bfcec3549041f2a6555f662707f394", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Fcd1fcc2429404a4c89291546a1058a39",
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Fe6b2ff97edad440a85d31d8ad2fb4929", 
+        "https://cdn.builder.io/api/v1/image/assets%2Fd517c881a5d04d1d9cc0328265132531%2Ff3d53fb5190a4e9cae74ad7e6cfe73b7"
+    ];
+
     // Set up event listeners
     setupEventListeners();
 
@@ -276,11 +287,6 @@ function renderGallery() {
     });
 
     updateButtonsVisibility();
-
-    // Update show more button visibility
-    if (elements.showMoreButton) {
-        elements.showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
-    }
 }
 
 function showFullGallery() {
@@ -297,7 +303,7 @@ document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
 function updateButtonsVisibility() {
 closeTopButton.style.display = state.showFullGallery ? 'block' : 'none';
 closeBottomButton.style.display = state.showFullGallery ? 'block' : 'none';
-loadMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
+showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
 }
 
 // Open gallery modal
