@@ -34,6 +34,8 @@ const elements = {
     mobileMenuOverlay: null,
     galleryGrid: null,
     showMoreButton: null,
+    closeTopButton: null,
+    closeBottomButton: null,
     galleryModal: null,
     modalImage: null,
     modalClose: null,
@@ -57,6 +59,9 @@ function init() {
     elements.mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
     elements.galleryGrid = document.getElementById('galleryGrid');
     elements.showMoreButton = document.getElementById('showMoreButton');
+    elements.galleryGrid = document.getElementById('galleryGrid');
+    elements.closeTopButton = document.getElementById('closeGalleryTop');
+    elements.closeBottomButton = document.getElementById('closeGalleryBottom');
     elements.galleryModal = document.querySelector('.gallery-modal');
     elements.modalImage = document.getElementById('modalImage');
     elements.modalClose = document.getElementById('modalClose');
@@ -133,6 +138,18 @@ function setupEventListeners() {
     // Gallery show more button
     if (elements.showMoreButton) {
         elements.showMoreButton.addEventListener('click', showFullGallery);
+    }
+
+    //Gallery vlose buttons
+    if (elements.closeTopButton) {
+        elements.closeTopButton.addEventListener('click', closeGallery);
+    }
+    
+    if (elements.closeBottomButton) {
+        elements.closeBottomButton.addEventListener('click', () => {
+      closeGallery();
+      scrollToGallery();
+    });
     }
 
     // Gallery modal
@@ -258,6 +275,8 @@ function renderGallery() {
         elements.galleryGrid.appendChild(galleryItem);
     });
 
+    updateButtonsVisibility();
+
     // Update show more button visibility
     if (elements.showMoreButton) {
         elements.showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
@@ -269,6 +288,19 @@ function showFullGallery() {
     renderGallery();
 }
 
+// Scroll to gallery top
+function scrollToGallery() {
+document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Update buttons visibility
+function updateButtonsVisibility() {
+closeTopButton.style.display = state.showFullGallery ? 'block' : 'none';
+closeBottomButton.style.display = state.showFullGallery ? 'block' : 'none';
+loadMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
+}
+
+// Open gallery modal
 function openGalleryModal(index) {
     state.selectedImageIndex = index;
     state.isGalleryModalOpen = true;
