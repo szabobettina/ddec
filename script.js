@@ -45,7 +45,8 @@ const elements = {
     navLinks: null,
     currentYearSpan: null,
     siteTitle: null,
-    footerLogo: null
+    footerLogo: null,
+    logoImage: null
 };
 
 // Initialize the application
@@ -68,6 +69,7 @@ function init() {
     elements.currentYearSpan = document.getElementById('currentYear');
     elements.siteTitle = document.querySelector('.site-title');
     elements.footerLogo = document.querySelector('.footer-logo');
+    elements.logoImage = document.querySelector('.logo-image');
 
     // Set up event listeners
     setupEventListeners();
@@ -100,7 +102,7 @@ function setupEventListeners() {
         link.addEventListener('click', handleNavClick);
     });
 
-    [elements.siteTitle, elements.footerLogo].forEach(el => {
+    [elements.siteTitle, elements.footerLogo, elements.logoImage].forEach(el => {
         if (el) {
             el.style.cursor = 'pointer';
             el.addEventListener('click', (e) => {
