@@ -173,6 +173,11 @@ body {
     font-weight: 900;
 }
 
+.site-title:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
 @media (max-width: 991px) {
     .site-title {
         font-size: 28px;
@@ -1700,6 +1705,7 @@ body {
 
 .footer-logo:hover {
     color: var(--secondary-color);
+    transform: translateY(-3px);
 }
 
 .footer-social {
