@@ -69,7 +69,7 @@ function init() {
     elements.currentYearSpan = document.getElementById('currentYear');
     elements.siteTitle = document.querySelector('.site-title');
     elements.footerLogo = document.querySelector('.footer-logo');
-    elements.logoImage = document.querySelector('.logo-image');
+    elements.logoImage = document.querySelector('.logo-container');
 
     // Set up event listeners
     setupEventListeners();
