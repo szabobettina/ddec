@@ -1468,9 +1468,9 @@ body {
 }
 
 .show-more-button:hover {
+  background: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background-color: var(--secondary-color);
 }
 
 @media (max-width: 991px) {
