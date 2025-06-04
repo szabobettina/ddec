@@ -898,13 +898,14 @@ body {
 }
 
 /* Why Choose Us Section */
+/* Why Choose Us Section */
 .why-choose-us {
     margin-top: 80px;
     margin-bottom: 40px;
-    position: relative;
     padding: 40px 20px;
     background: white;
     border-radius: 20px;
+    position: relative;
 }
 
 @media (max-width: 991px) {
@@ -926,12 +927,12 @@ body {
     font-size: 32px;
     color: var(--primary-color);
     margin-bottom: 50px;
-    font-family: Cormorant Infant, serif;
+    font-family: "Cormorant Infant", serif;
     font-weight: 600;
     position: relative;
 }
 
-.why-choose-title:after {
+.why-choose-title::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -942,70 +943,29 @@ body {
     background: var(--primary-color);
 }
 
+/* Grid Layout */
 .features-grid {
-    gap: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
 }
 
 @media (max-width: 991px) {
     .features-grid {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 }
 
-.features-columns {
-    gap: 20px;
-    display: flex;
-}
-
-@media (max-width: 991px) {
-    .features-columns {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
-    }
-}
-
-.feature-column {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    line-height: normal;
-    width: 33%;
-    margin-left: 0px;
-}
-
-@media (max-width: 991px) {
-    .feature-column {
-        width: 100%;
-    }
-}
-
+/* Card */
 .feature-card {
     background: linear-gradient(135deg, rgba(255,182,193,0.1) 0%, rgba(255,218,185,0.1) 100%);
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    height: 100%;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-}
-
-@media (max-width: 991px) {
-    .feature-card {
-        margin-bottom: 30px;
-        padding: 25px;
-    }
-}
-
-@media (max-width: 640px) {
-    .feature-card {
-        margin-bottom: 25px;
-        padding: 20px;
-    }
 }
 
 .feature-card:hover {
@@ -1013,6 +973,11 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
+.feature-card:last-child {
+    margin-bottom: 0;
+}
+
+/* Icon */
 .feature-icon {
     width: 70px;
     height: 70px;
@@ -1024,20 +989,21 @@ body {
     color: #333;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
     background-color: #f8f8f8;
+    transition: all 0.3s ease;
 }
 
-.feature-icon:hover {
+.feature-card:hover .feature-icon {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
+/* Titles & Text */
 .feature-title {
     font-size: 24px;
     margin-bottom: 15px;
     color: #333;
-    font-family: Cormorant Infant, serif;
+    font-family: "Cormorant Infant", serif;
 }
 
 .feature-description {
