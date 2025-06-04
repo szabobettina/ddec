@@ -146,8 +146,8 @@ function setupEventListeners() {
     
     if (elements.closeBottomButton) {
         elements.closeBottomButton.addEventListener('click', () => {
-      closeGallery();
-      scrollToGallery();
+        closeGallery();
+        scrollToGallery();
     });
     }
 
@@ -289,9 +289,9 @@ document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
 
 // Update buttons visibility
 function updateButtonsVisibility() {
-closeTopButton.style.display = state.showFullGallery ? 'block' : 'none';
-closeBottomButton.style.display = state.showFullGallery ? 'block' : 'none';
-showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
+elements.closeTopButton.style.display = state.showFullGallery ? 'block' : 'none';
+elements.closeBottomButton.style.display = state.showFullGallery ? 'block' : 'none';
+elements.showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
 }
 
 // Open gallery modal
