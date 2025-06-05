@@ -258,11 +258,10 @@ function setupHeaderScroll() {
 
 // Gallery functions
 function renderGallery() {
-    if (!elements.galleryGrid) return;
-
+     const galleryGrid = elements.galleryGrid;
+    galleryGrid.innerHTML = "";
+    
     const imagesToShow = state.showFullGallery ? state.images : state.images.slice(0, 8);
-
-    elements.galleryGrid.innerHTML = '';
 
     imagesToShow.forEach((imageUrl, index) => {
         const galleryItem = document.createElement('div');
@@ -274,24 +273,35 @@ function renderGallery() {
         elements.galleryGrid.appendChild(galleryItem);
     });
 
-    updateButtonsVisibility();
+    if (state.showFullGallery) {
+        elements.showMoreButton.style.display = 'none';
+        elements.closeTopButton.style.display = 'block';
+        elements.closeBottomButton.style.display = 'block';
+    } else {
+        elements.showMoreButton.style.display = 'block';
+        elements.closeTopButton.style.display = 'none';
+        elements.closeBottomButton.style.display = 'none';
+    }
 }
 
 function showFullGallery() {
     state.showFullGallery = true;
     renderGallery();
+    scrollToGallery();
+}
+
+function closeGallery() {
+    state.showFullGallery = false;
+    renderGallery();
+    scrollToGallery();
 }
 
 // Scroll to gallery top
 function scrollToGallery() {
-document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
-}
-
-// Update buttons visibility
-function updateButtonsVisibility() {
-elements.closeTopButton.style.display = state.showFullGallery ? 'block' : 'none';
-elements.closeBottomButton.style.display = state.showFullGallery ? 'block' : 'none';
-elements.showMoreButton.style.display = state.showFullGallery ? 'none' : 'block';
+    const gallerySection = document.getElementById('galleryGrid');
+    if (gallerySection) {
+        gallerySection.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 // Open gallery modal
