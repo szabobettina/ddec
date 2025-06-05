@@ -306,13 +306,8 @@ function scrollToGallery() {
 function openGalleryModal(index) {
     state.selectedImageIndex = index;
     state.isGalleryModalOpen = true;
-
-    galleryImage.src = state.images[state.selectedImageIndex];
-    elements.galleryModal.classList.add("active");
-    elements.galleryModal.setAttribute("aria-hidden", "false");
-
-    document.body.style.overflow = "hidden";
-    elements.galleryModal.focus();
+    updateGalleryModal();
+    document.body.style.overflow = 'hidden';
 }
 
 function closeGalleryModal() {
@@ -320,18 +315,26 @@ function closeGalleryModal() {
     if (elements.galleryModal) {
         elements.galleryModal.classList.remove('active');
     }
-    elements.galleryModal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = '';
 }
 
 function showPrevImage() {
     state.selectedImageIndex = (state.selectedImageIndex - 1 + state.images.length) % state.images.length;
-    elements.modalImage.src = state.images[state.selectedImageIndex];
+    updateGalleryModal();
 }
 
 function showNextImage() {
     state.selectedImageIndex = (state.selectedImageIndex + 1) % state.images.length;
-    elements.modalImage.src = state.images[state.selectedImageIndex];
+    updateGalleryModal();
+}
+
+function updateGalleryModal() {
+    if (elements.galleryModal && elements.modalImage) {
+        elements.galleryModal.classList.toggle('active', state.isGalleryModalOpen);
+        if (state.isGalleryModalOpen) {
+            elements.modalImage.src = state.images[state.selectedImageIndex];
+        }
+    }
 }
 
 function handleKeyDown(e) {
