@@ -306,8 +306,8 @@ function scrollToGallery() {
 function openGalleryModal(index) {
     state.selectedImageIndex = index;
     state.isGalleryModalOpen = true;
-    updateGalleryModal();
 
+    galleryImage.src = state.images[state.selectedImageIndex];
     elements.galleryModal.classList.add("active");
     elements.galleryModal.setAttribute("aria-hidden", "false");
 
@@ -326,18 +326,12 @@ function closeGalleryModal() {
 
 function showPrevImage() {
     state.selectedImageIndex = (state.selectedImageIndex - 1 + state.images.length) % state.images.length;
-    updateGalleryModal();
+    elements.modalImage.src = state.images[state.selectedImageIndex];
 }
 
 function showNextImage() {
     state.selectedImageIndex = (state.selectedImageIndex + 1) % state.images.length;
-    updateGalleryModal();
-}
-
-function updateGalleryModal() {
-    if (elements.galleryModal && elements.modalImage) {
-            elements.modalImage.src = state.images[state.selectedImageIndex];
-        }
+    elements.modalImage.src = state.images[state.selectedImageIndex];
 }
 
 function handleKeyDown(e) {
