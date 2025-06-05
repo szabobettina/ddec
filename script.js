@@ -293,7 +293,6 @@ function showFullGallery() {
 function closeGallery() {
     state.showFullGallery = false;
     renderGallery();
-    scrollToGallery();
 }
 
 // Scroll to gallery top
