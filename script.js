@@ -307,7 +307,12 @@ function openGalleryModal(index) {
     state.selectedImageIndex = index;
     state.isGalleryModalOpen = true;
     updateGalleryModal();
-    document.body.style.overflow = 'hidden';
+
+    elements.galleryModal.classList.add("active");
+    elements.galleryModal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+    elements.galleryModal.focus();
 }
 
 function closeGalleryModal() {
@@ -315,6 +320,7 @@ function closeGalleryModal() {
     if (elements.galleryModal) {
         elements.galleryModal.classList.remove('active');
     }
+    elements.galleryModal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = '';
 }
 
@@ -330,11 +336,8 @@ function showNextImage() {
 
 function updateGalleryModal() {
     if (elements.galleryModal && elements.modalImage) {
-        elements.galleryModal.classList.toggle('active', state.isGalleryModalOpen);
-        if (state.isGalleryModalOpen) {
             elements.modalImage.src = state.images[state.selectedImageIndex];
         }
-    }
 }
 
 function handleKeyDown(e) {
