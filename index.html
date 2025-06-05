@@ -405,13 +405,13 @@
                         <p class="gallery-description">A galéria megtekintéséhez kattintson az alábbi képekre</p>
                           
                         <div class="gallery-container">
-                          <button class="close-button close-button-top" id="closeGalleryTop" display="none">
+                          <button class="close-button close-button-top" id="closeGalleryTop">
                             Bezárás
                           </button>
                           <div class="gallery-grid" id="galleryGrid">
                             <!-- Images will be dynamically inserted here -->
                           </div>
-                          <button class="close-button close-button-bottom"  role="button" aria-label="Bezárás és visszatérés a galéria tetejére" id="closeGalleryBottom" display="none">
+                          <button class="close-button close-button-bottom"  role="button" aria-label="Bezárás és visszatérés a galéria tetejére" id="closeGalleryBottom">
                             Bezárás
                           </button>
                         </div>
@@ -514,13 +514,13 @@
     </div>
 
     <!-- Gallery Modal -->
-    <div class="gallery-modal" id="galleryModal">
+    <div class="gallery-modal" id="galleryModal" tabindex="-1" aria-hidden="true">
         <div class="modal-overlay"></div>
         <div class="modal-content">
-            <button class="modal-close" id="modalClose">&times;</button>
-            <button class="modal-nav modal-prev" id="modalPrev">&#8249;</button>
-            <img class="modal-image" id="modalImage" src="" alt="">
-            <button class="modal-nav modal-next" id="modalNext">&#8250;</button>
+            <button class="modal-close" id="modalClose" aria-label="Bezárás">x</button>
+            <button class="modal-nav modal-prev" id="modalPrev"aria-label="Előző kép">←</button>
+            <img class="modal-image" id="modalImage" alt="Galéria Esküvői dekor kép" />
+            <button class="modal-nav modal-next" id="modalNext"aria-label="Következő kép">→</button>
         </div>
     </div>
 
