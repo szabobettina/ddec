@@ -298,7 +298,7 @@ function closeGallery() {
 
 // Scroll to gallery top
 function scrollToGallery() {
-    const gallerySection = document.getElementById('galleryGrid');
+    const gallerySection = document.getElementById('gallery');
     if (gallerySection) {
         gallerySection.scrollIntoView({ behavior: 'smooth' });
     }
