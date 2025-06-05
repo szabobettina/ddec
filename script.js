@@ -287,7 +287,6 @@ function renderGallery() {
 function showFullGallery() {
     state.showFullGallery = true;
     renderGallery();
-    scrollToGallery();
 }
 
 function closeGallery() {
