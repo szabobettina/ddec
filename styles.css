@@ -1678,18 +1678,9 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-social-link {
-    color: #888;
-    transition: all 0.3s ease;
-}
-
 .footer-social-icon {
     width: 24px;
     height: 24px;
-}
-
-.footer-social-icon:hover {
-    color: var(--primary-color);
 }
 
 .footer-phone {
