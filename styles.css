@@ -1678,6 +1678,12 @@ body {
     height: 24px;
 }
 
+.footer-social-icon:hover {
+    color: var(--primary-color)
+    background-color: var(--primary-color);
+}
+    
+
 .footer-phone {
     color: #666;
     margin-bottom: 20px;
