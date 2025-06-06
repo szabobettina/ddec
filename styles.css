@@ -1666,11 +1666,6 @@ body {
     display: block;
 }
 
-.footer-logo:hover {
-    color: var(--secondary-color);
-    transform: translateY(-3px);
-}
-
 .footer-social {
     display: flex;
     justify-content: center;
