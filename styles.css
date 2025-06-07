@@ -1551,10 +1551,18 @@ body {
 
   .modal-prev,
   .modal-next {
-    font-size: 32px;
-    padding: 10px;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* jobb kontraszt */
+    border: none;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 12px;
+    z-index: 1001;
+    border-radius: 50%;
+    transition: var(--transition-standard);
   }
 
   .modal-prev {
