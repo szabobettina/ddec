@@ -173,15 +173,6 @@ function setupEventListeners() {
         });
     }
 
-    modal.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    }, false);
-
-    modal.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    }, false);
-
     // Contact form
     if (elements.contactForm) {
         elements.contactForm.addEventListener('submit', handleFormSubmit);
@@ -361,17 +352,6 @@ function handleKeyDown(e) {
             closeGalleryModal();
             break;
     }
-}
-
-function handleSwipe() {
-    let touchStartX = 0;
-    let touchEndX = 0;
-      if (touchEndX < touchStartX - 50) {
-        modalNext.click(); // jobbra húzás → következő kép
-      }
-      if (touchEndX > touchStartX + 50) {
-        modalPrev.click(); // balra húzás → előző kép
-      }
 }
 
 // Package selection
