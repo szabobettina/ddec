@@ -334,10 +334,9 @@ function showNextImage() {
 
 function updateGalleryModal() {
     if (elements.galleryModal && elements.modalImage) {
-        elements.galleryModal.classList.toggle('active', state.isGalleryModalOpen);
-        if (state.isGalleryModalOpen) {
-            elements.modalImage.src = state.images[state.selectedImageIndex];
-        }
+        const image = state.images[state.selectedImageIndex];
+        elements.modalImage.src = image.src;
+        elements.modalImage.alt = image.alt;
     }
 }
 
