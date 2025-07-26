@@ -265,12 +265,11 @@ function renderGallery() {
     
     const imagesToShow = state.showFullGallery ? state.images : state.images.slice(0, 8);
 
-    imagesToShow.forEach((imageUrl, index) => {
+    imagesToShow.forEach((image, index) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
         galleryItem.innerHTML = `
-            <img src="${imageUrl}" alt="Gallery Image ${index + 1}" class="gallery-image">
-        `;
+            <img src="${image.src}" alt="${image.alt}" class="gallery-image"> `;
         galleryItem.addEventListener('click', () => openGalleryModal(index));
         elements.galleryGrid.appendChild(galleryItem);
     });
