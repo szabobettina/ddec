@@ -308,9 +308,9 @@ function openGalleryModal(index) {
     const image = state.images[index];
     elements.modalImage.src = image.src;
     elements.modalImage.alt = image.alt;
-    elements.galleryModal.classList.add('open');  // vagy 'open', ami a CSS-edben van
+    elements.galleryModal.classList.add('active');
     state.isGalleryModalOpen = true;
-    document.body.style.overflow = 'hidden'; // oldal görgetés tiltása modal nyitásakor
+    document.body.style.overflow = 'hidden';
 }
 
 function closeGalleryModal() {
