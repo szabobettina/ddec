@@ -305,6 +305,7 @@ function scrollToGallery() {
 
 // Open gallery modal
 function openGalleryModal(index) {
+    state.selectedImageIndex = index; // <- EZ KELL!
     const image = state.images[index];
     elements.modalImage.src = image.src;
     elements.modalImage.alt = image.alt;
