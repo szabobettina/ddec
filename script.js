@@ -333,8 +333,11 @@ function showNextImage() {
 }
 
 function updateGalleryModal() {
+    console.log('updateGalleryModal', state.selectedImageIndex);
+    console.log('elements.modalImage:', elements.modalImage);
     if (elements.galleryModal && elements.modalImage) {
         const image = state.images[state.selectedImageIndex];
+        console.log('Loading image:', image.src);
         elements.modalImage.src = image.src;
         elements.modalImage.alt = image.alt;
     }
