@@ -269,7 +269,7 @@ function renderGallery() {
         const galleryItem = document.createElement('div');
         galleryItem.className = 'gallery-item';
         galleryItem.innerHTML = `
-            <img src="${image.src}" alt="${image.alt}" class="gallery-image"> `;
+            <img src="${image.src}" alt="${image.alt}" class="gallery-image" loading="lazy">`;
         galleryItem.addEventListener('click', () => openGalleryModal(index));
         elements.galleryGrid.appendChild(galleryItem);
     });
