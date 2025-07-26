@@ -305,10 +305,10 @@ function scrollToGallery() {
 
 // Open gallery modal
 function openGalleryModal(index) {
-    state.selectedImageIndex = index;
-    state.isGalleryModalOpen = true;
-    updateGalleryModal();
-    document.body.style.overflow = 'hidden';
+    const image = filteredImages[index];
+    elements.modalImage.src = image.src;
+    elements.modalImage.alt = image.alt;
+    elements.modal.classList.add('open');
 }
 
 function closeGalleryModal() {
