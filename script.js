@@ -305,11 +305,12 @@ function scrollToGallery() {
 
 // Open gallery modal
 function openGalleryModal(index) {
-    state.selectedImageIndex = index; // <- EZ KELL!
+    state.selectedImageIndex = index;
     const image = state.images[index];
     elements.modalImage.src = image.src;
     elements.modalImage.alt = image.alt;
     elements.galleryModal.classList.add('active');
+    elements.galleryModal.setAttribute('aria-hidden', 'false'); // hozzáadás
     state.isGalleryModalOpen = true;
     document.body.style.overflow = 'hidden';
 }
@@ -318,6 +319,7 @@ function closeGalleryModal() {
     state.isGalleryModalOpen = false;
     if (elements.galleryModal) {
         elements.galleryModal.classList.remove('active');
+        elements.galleryModal.setAttribute('aria-hidden', 'true'); // hozzáadás
     }
     document.body.style.overflow = '';
 }
