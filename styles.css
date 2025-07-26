@@ -25,7 +25,7 @@ body {
     flex-direction: column;
 }
 
-.content-container {
+.content {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
