@@ -305,10 +305,12 @@ function scrollToGallery() {
 
 // Open gallery modal
 function openGalleryModal(index) {
-    const image = filteredImages[index];
+    const image = state.images[index];
     elements.modalImage.src = image.src;
     elements.modalImage.alt = image.alt;
-    elements.modal.classList.add('open');
+    elements.galleryModal.classList.add('open');  // vagy 'open', ami a CSS-edben van
+    state.isGalleryModalOpen = true;
+    document.body.style.overflow = 'hidden'; // oldal görgetés tiltása modal nyitásakor
 }
 
 function closeGalleryModal() {
