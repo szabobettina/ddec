@@ -172,6 +172,29 @@ function setupEventListeners() {
                 closeGalleryModal();
             }
         });
+
+         let touchStartX = 0;
+        let touchEndX = 0;
+    
+        elements.galleryModal.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+    
+        elements.galleryModal.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipeGesture();
+        }, false);
+    
+        function handleSwipeGesture() {
+            const delta = touchStartX - touchEndX;
+            if (Math.abs(delta) > 50) {
+                if (delta > 0) {
+                    showNextImage();
+                } else {
+                    showPrevImage();
+                }
+            }
+        }
     }
 
     // Contact form
