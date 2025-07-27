@@ -1407,7 +1407,6 @@ body {
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
 }
 
 .gallery-image {
@@ -1416,7 +1415,6 @@ body {
   object-position: center;
   width: 100%;
   height: 100%;
-  transition: transform 0.3s ease;
   overflow: hidden;
 }
 
